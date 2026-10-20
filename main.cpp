@@ -52,11 +52,6 @@ int main(int argc, char* argv[]) {
         SDL_SetRenderDrawColor(renderer, 30, 30, 46, 255); // dark background
         SDL_RenderClear(renderer);
 
-        // Draw a simple rectangle as a visual test
-        SDL_SetRenderDrawColor(renderer, 255, 214, 0, 255);
-        SDL_FRect rect = { 100.0f, 100.0f, 200.0f, 150.0f };
-        SDL_RenderFillRect(renderer, &rect);
-
         SDL_RenderPresent(renderer);
 
         // 4. Cap frame rate (optional)
